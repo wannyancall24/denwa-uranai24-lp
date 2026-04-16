@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>占い師パートナー募集 | 電話占い24</title>
+<meta name="description" content="電話占い24の占い師パートナー募集。電話鑑定¥300/分〜、ビデオ鑑定¥400/分〜。登録無料。在宅でスキマ時間に副収入。">
+<meta name="keywords" content="占い師 募集,占い師 求人,占い師 副業,電話占い 求人,占い師 在宅,占い師 業務委託">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --purple: #4A2D90;
+    --purple-dark: #3A2070;
+    --pink: #F4A7B9;
+    --pink-light: #FFF0F3;
+    --accent: #9B8EC4;
+    --text: #222;
+    --text-sub: #555;
+    --border: #E8DFF4;
+    --bg: #fff;
+    --bg-gray: #F8F4FF;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Noto Sans JP',sans-serif; background:var(--bg); color:var(--text); font-size:15px; line-height:1.7; }
+
+header { position:fixed; top:0; left:0; right:0; z-index:100; background:var(--purple-dark); height:52px; display:flex; align-items:center; justify-content:space-between; padding:0 20px; }
+.logo { font-size:0.95rem; font-weight:700; color:#fff; display:flex; align-items:center; gap:6px; }
+.header-btn { background:var(--pink); color:#fff; padding:7px 16px; font-size:0.78rem; font-weight:700; border:none; cursor:pointer; text-decoration:none; border-radius:3px; }
+
+.hero { margin-top:52px; background:var(--purple); padding:24px 20px 24px; text-align:center; color:#fff; }
+.hero-label { display:inline-block; background:var(--pink); color:#fff; font-size:0.7rem; font-weight:700; letter-spacing:0.1em; padding:4px 12px; border-radius:2px; margin-bottom:12px; }
+.hero-title { font-size:clamp(1.4rem,5vw,2.2rem); font-weight:700; line-height:1.5; margin-bottom:8px; }
+.hero-desc { font-size:0.86rem; color:rgba(255,255,255,0.8); line-height:1.8; margin-bottom:16px; font-weight:300; }
+.hero-btns { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+.btn-pink { background:var(--pink); color:#fff; padding:11px 24px; font-size:0.86rem; font-weight:700; border:none; cursor:pointer; text-decoration:none; border-radius:3px; display:inline-block; }
+.btn-outline { background:transparent; color:#fff; padding:11px 24px; font-size:0.86rem; border:1px solid rgba(255,255,255,0.4); cursor:pointer; text-decoration:none; border-radius:3px; display:inline-block; }
+
+.stats-bar { background:var(--bg); border-bottom:2px solid var(--border); display:grid; grid-template-columns:repeat(2,1fr); }
+.stat { text-align:center; padding:20px 12px; }
+.stat:nth-child(1) { border-right:1px solid var(--border); border-bottom:1px solid var(--border); }
+.stat:nth-child(2) { border-bottom:1px solid var(--border); }
+.stat:nth-child(3) { border-right:1px solid var(--border); }
+.stat-num { font-size:1.5rem; font-weight:700; color:var(--purple); line-height:1; }
+.stat-label { font-size:0.67rem; color:var(--text-sub); margin-top:4px; line-height:1.4; }
+
+.section { padding:28px 20px; max-width:920px; margin:0 auto; }
+.section-bg { background:var(--bg-gray); }
+.section-bg .si { max-width:920px; margin:0 auto; padding:28px 20px; }
+.stag { display:inline-flex; align-items:center; gap:6px; font-size:0.67rem; font-weight:700; letter-spacing:0.18em; color:var(--accent); text-transform:uppercase; margin-bottom:6px; }
+.stag::before { content:''; display:block; width:14px; height:2px; background:var(--accent); }
+.stitle { font-size:clamp(1.15rem,3vw,1.55rem); font-weight:700; color:var(--purple-dark); line-height:1.4; margin-bottom:24px; }
+
+.merit-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+.merit-card { background:var(--bg); border:1px solid var(--border); border-left:4px solid var(--purple); border-radius:3px; padding:22px 18px; }
+.merit-icon { font-size:1.3rem; margin-bottom:8px; }
+.merit-title { font-size:0.9rem; font-weight:700; margin-bottom:6px; color:var(--purple-dark); }
+.merit-text { font-size:0.81rem; color:var(--text-sub); line-height:1.85; font-weight:300; }
+
+.reward-box { background:var(--bg); border:1px solid var(--border); border-radius:6px; overflow:hidden; margin-bottom:20px; }
+.reward-box-title { background:var(--purple); color:#fff; padding:12px 20px; font-size:0.85rem; font-weight:700; }
+.reward-row { display:flex; justify-content:space-between; align-items:center; padding:14px 20px; border-bottom:1px solid var(--border); font-size:0.86rem; flex-wrap:wrap; gap:4px; }
+.reward-row:last-child { border-bottom:none; }
+.reward-label { color:var(--text-sub); }
+.reward-amount { font-weight:700; color:var(--purple); }
+.reward-amount.pink { color:var(--pink); font-size:1rem; }
+
+.flow-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+.flow-card { display:flex; gap:14px; align-items:flex-start; background:var(--bg); border:1px solid var(--border); border-radius:3px; padding:20px 16px; }
+.flow-num { width:36px; height:36px; background:var(--purple); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.95rem; font-weight:700; flex-shrink:0; }
+.flow-title { font-size:0.88rem; font-weight:700; color:var(--purple-dark); margin-bottom:4px; }
+.flow-text { font-size:0.78rem; color:var(--text-sub); line-height:1.7; font-weight:300; }
+
+.faq-list { max-width:680px; margin:0 auto; }
+.faq-item { border-bottom:1px solid var(--border); }
+.faq-q { padding:18px 0; display:flex; gap:10px; align-items:flex-start; cursor:pointer; font-size:0.88rem; font-weight:500; }
+.faq-q-icon { background:var(--purple); color:#fff; width:20px; height:20px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.65rem; font-weight:700; flex-shrink:0; margin-top:2px; }
+.faq-q-text { flex:1; line-height:1.5; }
+.faq-toggle { color:var(--purple); font-size:1.2rem; flex-shrink:0; transition:transform 0.25s; line-height:1; }
+.faq-item.open .faq-toggle { transform:rotate(45deg); }
+.faq-a { max-height:0; overflow:hidden; transition:max-height 0.35s ease; padding-left:30px; }
+.faq-a-inner { padding-bottom:18px; font-size:0.82rem; color:var(--text-sub); line-height:1.85; font-weight:300; }
+.faq-item.open .faq-a { max-height:400px; }
+
+.cta-section { background:var(--purple); padding:56px 20px; text-align:center; color:#fff; }
+.cta-title { font-size:clamp(1.3rem,4vw,1.8rem); font-weight:700; margin-bottom:10px; }
+.cta-desc { font-size:0.88rem; color:rgba(255,255,255,0.75); margin-bottom:32px; line-height:1.8; font-weight:300; }
+.cta-btn { display:inline-block; background:var(--pink); color:#fff; padding:16px 48px; font-size:1rem; font-weight:700; border-radius:4px; text-decoration:none; transition:background 0.2s; }
+.cta-btn:hover { background:#e8939f; }
+
+footer { background:var(--purple-dark); padding:22px 20px 80px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; }
+.footer-logo { font-size:0.88rem; color:rgba(255,255,255,0.85); font-weight:700; }
+.footer-text { font-size:0.68rem; color:rgba(255,255,255,0.4); }
+
+@media(max-width:600px){
+.merit-grid,.flow-grid { grid-template-columns:1fr; }
+footer { flex-direction:column; text-align:center; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🔮 電話占い24</div>
+  <a href="https://denwa-uranai24.vercel.app/fortune-teller-recruit" class="header-btn register-link">占い師登録する</a>
+</header>
+
+<div class="hero">
+  <div class="hero-label">占い師パートナー募集</div>
+  <h1 class="hero-title">空き時間を活かして、<br>在宅で副収入を得ませんか？</h1>
+  <p class="hero-desc">電話占い24は、相談者と占い師をつなぐオンライン鑑定プラットフォームです。<br>スマホ1台・好きな時間に。電話・ビデオ通話で鑑定できます。</p>
+  <div class="hero-btns">
+    <a href="https://denwa-uranai24.vercel.app/fortune-teller-recruit" class="btn-pink register-link">パートナー登録をする</a>
+    <a href="#reward" class="btn-outline">報酬・料金を見る</a>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num">¥300〜</div><div class="stat-label">電話鑑定<br>1分あたり</div></div>
+  <div class="stat"><div class="stat-num">¥400〜</div><div class="stat-label">ビデオ鑑定<br>1分あたり</div></div>
+  <div class="stat"><div class="stat-num">100%</div><div class="stat-label">指名料は<br>全額占い師へ</div></div>
+  <div class="stat"><div class="stat-num">0円</div><div class="stat-label">登録費用<br>完全無料</div></div>
+</div>
+
+<div class="section-bg">
+  <div class="si">
+    <div class="stag">メリット</div>
+    <h2 class="stitle">選ばれる4つの理由</h2>
+    <div class="merit-grid">
+      <div class="merit-card">
+        <div class="merit-icon">🕐</div>
+        <div class="merit-title">好きな時間に働ける</div>
+        <div class="merit-text">勤務時間の縛りなし。本業の合間や休日のみでもOK。深夜帯は需要が高く、安定した鑑定依頼が見込めます。</div>
+      </div>
+      <div class="merit-card">
+        <div class="merit-icon">💴</div>
+        <div class="merit-title">分単位の明朗報酬</div>
+        <div class="merit-text">電話鑑定¥300/分、ビデオ鑑定¥400/分。通話時間に応じた報酬が確定します。指名料¥500は全額占い師へ。</div>
+      </div>
+      <div class="merit-card">
+        <div class="merit-icon">📞</div>
+        <div class="merit-title">電話・ビデオ通話で鑑定</div>
+        <div class="merit-text">電話鑑定とビデオ鑑定の2種類に対応。専用アプリ不要でスマートフォンのブラウザから対応できます。</div>
+      </div>
+      <div class="merit-card">
+        <div class="merit-icon">🛡️</div>
+        <div class="merit-title">安心のサポート体制</div>
+        <div class="merit-text">占いによる一般的なアドバイス提供のサービスです。運営サポートが迷惑ユーザー対応・通報・ブロック機能を整備しています。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-bg" id="reward"><div class="si">
+  <div class="stag">料金体系</div>
+  <h2 class="stitle">鑑定料金と報酬</h2>
+
+  <div class="reward-box">
+    <div class="reward-box-title">📞 電話鑑定</div>
+    <div class="reward-row"><span class="reward-label">鑑定料金</span><span class="reward-amount">¥300/分</span></div>
+    <div class="reward-row"><span class="reward-label">指名料</span><span class="reward-amount pink">¥500（全額占い師へ）</span></div>
+  </div>
+
+  <div class="reward-box">
+    <div class="reward-box-title">📹 ビデオ鑑定</div>
+    <div class="reward-row"><span class="reward-label">鑑定料金</span><span class="reward-amount">¥400/分</span></div>
+    <div class="reward-row"><span class="reward-label">指名料</span><span class="reward-amount pink">¥500（全額占い師へ）</span></div>
+  </div>
+
+  <div class="reward-box">
+    <div class="reward-box-title">💰 報酬シミュレーション</div>
+    <div class="reward-row"><span class="reward-label">月10件（各15分・電話）</span><span class="reward-amount pink">約¥45,000</span></div>
+    <div class="reward-row"><span class="reward-label">月20件（各15分・電話）</span><span class="reward-amount pink">約¥90,000</span></div>
+    <div class="reward-row"><span class="reward-label">月40件（電話+ビデオ混合）</span><span class="reward-amount pink">約¥180,000</span></div>
+  </div>
+  <div style="font-size:0.72rem;color:#9ca3af;text-align:center;margin-top:8px;">※実際の報酬は鑑定時間・報酬率により異なります</div>
+</div></div>
+
+<div class="section">
+  <div class="stag">登録の流れ</div>
+  <h2 class="stitle">審査通過まで4ステップ</h2>
+  <div class="flow-grid">
+    <div class="flow-card">
+      <div class="flow-num">1</div>
+      <div>
+        <div class="flow-title">基本情報の入力</div>
+        <div class="flow-text">お名前・メール・得意占術・鑑定経験・対応ジャンル・深夜対応可否を入力</div>
+      </div>
+    </div>
+    <div class="flow-card">
+      <div class="flow-num">2</div>
+      <div>
+        <div class="flow-title">経歴・自己紹介の入力</div>
+        <div class="flow-text">鑑定実績・経歴・相談者へのメッセージを入力。プロフィールの充実度が審査に影響します。</div>
+      </div>
+    </div>
+    <div class="flow-card">
+      <div class="flow-num">3</div>
+      <div>
+        <div class="flow-title">審査・承認</div>
+        <div class="flow-text">申請後、運営が経歴・実績を確認・審査します。通常1〜3営業日で結果をメールでお知らせします。</div>
+      </div>
+    </div>
+    <div class="flow-card">
+      <div class="flow-num">4</div>
+      <div>
+        <div class="flow-title">稼働開始</div>
+        <div class="flow-text">承認後、アカウントを作成してすぐに稼働開始。ダッシュボードでオンラインにすると鑑定リクエストが届きます。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-bg">
+  <div class="si">
+    <div class="stag">よくある質問</div>
+    <h2 class="stitle">FAQ</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-icon">Q</span><span class="faq-q-text">特別な資格は必要ですか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">特定の資格は必須ではありませんが、プロとしての鑑定経験をお持ちの方を対象としています。審査で経歴・実績を確認させていただきます。</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-icon">Q</span><span class="faq-q-text">本業がありますが副業としてできますか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">はい、業務委託契約のため、本業のある方でも在宅でオンライン対応できます。対応時間は完全に自由に設定できます。確定申告・税務処理はご自身でお願いします。</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-icon">Q</span><span class="faq-q-text">深夜の対応は必須ですか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">任意です。登録時に深夜対応の可否を設定でき、対応可能な時間だけオンラインにすればOKです。深夜帯は需要が高いため、対応いただける場合は鑑定数の増加が見込めます。</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-icon">Q</span><span class="faq-q-text">報酬の支払いはいつですか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">毎月末日締め、翌月払いです。登録された銀行口座へ振り込みます。</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-icon">Q</span><span class="faq-q-text">最低対応件数など義務はありますか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">最低件数の義務はありません。ご自身のペースで対応いただけます。長期間稼働がない場合は状態確認のご連絡をさせていただく場合があります。</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-icon">Q</span><span class="faq-q-text">退会はいつでもできますか？</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">はい、いつでも無料で退会できます。違約金等は一切ありません。</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section" id="register">
+  <h2 class="cta-title">占い師パートナーとして<br>登録する</h2>
+  <p class="cta-desc">電話占い24の占い師登録ページから<br>簡単に申請できます。</p>
+  <div id="consent-label" style="display:inline-flex;align-items:flex-start;gap:8px;text-align:left;max-width:400px;margin:0 auto 20px;cursor:pointer;font-size:0.82rem;color:rgba(255,255,255,0.85);line-height:1.6;">
+    <input type="checkbox" id="consent-check" style="margin-top:3px;accent-color:var(--pink);width:18px;height:18px;flex-shrink:0;cursor:pointer;">
+    <span onclick="if(event.target.tagName!=='A'){var c=document.getElementById('consent-check');c.checked=!c.checked;if(c.checked)document.getElementById('consent-error').style.display='none';}"><a href="https://denwa-uranai24.vercel.app/fortune-teller-contract" target="_blank" style="color:#c4b8e0;text-decoration:underline;">業務委託契約</a>・<a href="https://denwa-uranai24.vercel.app/terms" target="_blank" style="color:#c4b8e0;text-decoration:underline;">利用規約</a>に同意する</span>
+  </div>
+  <div id="consent-error" style="display:none;background:#fee2e2;color:#dc2626;font-size:0.82rem;font-weight:600;padding:10px 16px;border-radius:6px;max-width:400px;margin:0 auto 16px;">業務委託契約・利用規約への同意が必要です</div>
+  <a href="https://denwa-uranai24.vercel.app/fortune-teller-recruit" class="cta-btn register-link">今すぐ登録する →</a>
+  <p style="font-size:0.72rem;color:rgba(255,255,255,0.5);margin-top:14px;">※ 登録・審査は無料です。</p>
+</div>
+
+<footer>
+  <div class="footer-logo">🔮 電話占い24 — 占い師パートナー募集</div>
+  <div class="footer-text">© 2025 電話占い24 / 野口絵未. All rights reserved.</div>
+</footer>
+
+<div style="position:fixed;bottom:0;left:0;right:0;z-index:999;background:#fff;padding:10px 16px;box-shadow:0 -2px 12px rgba(0,0,0,0.12);text-align:center;">
+  <a href="https://denwa-uranai24.vercel.app/fortune-teller-recruit" class="register-link" style="display:block;background:var(--purple);color:#fff;text-decoration:none;padding:14px 20px;border-radius:50px;font-weight:800;font-size:1rem;">今すぐ電話占い24に登録する →</a>
+</div>
+
+<script>
+  function toggleFaq(el){ el.parentElement.classList.toggle('open'); }
+
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('.register-link');
+    if (!link) return;
+    e.preventDefault();
+    var cb = document.getElementById('consent-check');
+    var errEl = document.getElementById('consent-error');
+    if (!cb.checked) {
+      errEl.style.display = 'block';
+      document.getElementById('register').scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+    errEl.style.display = 'none';
+    window.location.assign('https://denwa-uranai24.vercel.app/fortune-teller-recruit');
+  });
+
+  document.getElementById('consent-check').addEventListener('change', function() {
+    if (this.checked) document.getElementById('consent-error').style.display = 'none';
+  });
+</script>
+
+</body>
+</html>
